@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  nameis:
+    container_name: expressapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: express:app
+    ports:
+      - '3003:3003'

@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  nameis:
+    container_name: devportfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: react:app
+    ports:
+      - '3000:3000'

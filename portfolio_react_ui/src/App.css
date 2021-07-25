@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+:root{
+--sidebar-flex:1.5;
+--condiv-flex:6;
+--fontsize-p:1.2rem;
+--fontsize-nav:1.6rem;
+--typing-font:3rem;
+}
+
+.typefont{
+
+  font-size: 60px;
+  
+}
+
+.wfont{
+  color:rgb(247, 242, 242);
+}
+*
+{
+margin:0;
+padding: 0;
+}
+body
+{
+font-family: 'Raleway';
+}
+.App
+{
+display: flex;
+width: 100vw;
+min-height: 100vh;
+}
+/* .condiv class is for the right side content container*/
+.condiv
+{
+padding: 100px ;
+background-color: #080808;
+flex:var(--condiv-flex);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav
+{
+padding:200px 30px 0px 30px ;
+flex:var(--sidebar-flex);
+
+/* background: linear-gradient(180deg, rgb(180, 180, 187) 50%, rgb(12, 12, 14) 80%); */
+}
+
+
+nav ul
+{
+  font-size:var(--fontsize-nav) ;
+  text-align: center; 
+  list-style-type: none;
+  
+  
+}
+nav ul li
+{
+  margin:40px;
+}
+.active
+{
+font-weight: bolder;
+}
+
+
+
+.subtopic
+{
+margin:1  0px 10px 30px 10px ;
+}
+p
+{
+font-size: var(--fontsize-p);
+}
+h1,h2,h3,h4,p
+{
+margin: 10px;
+}
+
+
+
+
+li
+{
+  list-style-type: none;
+}
